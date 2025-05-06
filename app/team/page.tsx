@@ -5,14 +5,13 @@ import Link from "next/link"
 
 const teamMembers = [
   {
-    name: "Alex Johnson",
+    name: "Tonmoy Ahamed",
     role: "Founder & CEO",
-    image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop",
-    bio: "Alex founded Dev Lab with a vision to create digital experiences that drive business growth. With over 15 years of experience in web development and digital strategy, he leads the team with passion and innovation.",
+    image: "https://res.cloudinary.com/dgwknm4yi/image/upload/v1746538587/qp3ybceclgfzueee3dol.jpg",
+    bio: "Tonmoy A. founded Dev Lab with a vision to create digital experiences that drive business growth. With over 4 years of experience in web development and digital strategy, he leads the team with passion and innovation.",
     social: {
-      linkedin: "#",
-      twitter: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/tonmoy-ahamed",
+      github: "https://github.com/KMTonmoy",
     },
   },
   {
