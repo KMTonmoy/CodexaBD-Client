@@ -59,6 +59,7 @@ export default function Portfolio() {
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
+            
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-muted-foreground mb-4">{project.description}</p>
