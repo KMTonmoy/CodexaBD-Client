@@ -3,13 +3,15 @@ import { Inter } from "next/font/google"
 import type React from "react"
 import type { Metadata } from "next"
 import MouseMoveEffect from "@/components/mouse-move-effect"
+import { ToastContainer } from "react-toastify"
+import Navbar from "@/components/navbar"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DevLab Solutions - Web Development & Design Portfolio",
+  title: "Dev Lab  - Web Development & Design Portfolio",
   description:
-    "DevLab creates exceptional digital experiences that drive results. Explore our portfolio of web development, UI/UX design, and full-stack solutions.",
+    "Dev Lab creates exceptional digital experiences that drive results. Explore our portfolio of web development, UI/UX design, and full-stack .",
 }
 
 export default function RootLayout({
@@ -20,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-background text-foreground antialiased`}>
+        <ToastContainer/>
         <MouseMoveEffect />
+        <Navbar/>
         {children}
       </body>
     </html>

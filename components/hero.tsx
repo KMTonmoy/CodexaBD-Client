@@ -13,19 +13,18 @@ export default function Hero() {
 
       <div className="space-y-4 max-w-4xl">
         <h1 className="bg-gradient-to-br from-foreground from-30% via-foreground/90 to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
-          Let DevLab Make
+          Let DevLab Elevate
           <br />
-          Your Website Stand Out
+          Your Digital Presence
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Leverage the power of canvas to create a beautiful hero section. We build stunning digital experiences that
-          captivate your audience.
+          Unlock the potential of modern web development with DevLab. We create exceptional digital solutions that enhance user experience and drive results for your business.
         </p>
       </div>
       <div className="flex gap-4">
         <Button variant="gradient" size="lg" className="group">
           <Link href="/contact">
-            Get Your Chance
+            Start Your Journey
             <span className="inline-block transition-transform group-hover:translate-x-1 ml-1">→</span>
           </Link>
         </Button>
@@ -44,4 +43,3 @@ export default function Hero() {
     </section>
   )
 }
-

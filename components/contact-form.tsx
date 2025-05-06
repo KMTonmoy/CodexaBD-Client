@@ -1,12 +1,12 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Send, Check } from "lucide-react"
+import { toast } from 'react-toastify'
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -16,20 +16,30 @@ export default function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
+    const form = e.target as HTMLFormElement
+    const formData = new FormData(form)
+
+    const response = await fetch('https://formspree.io/f/mqaqqnpq', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json',
+      },
+    })
+
+    if (response.ok) {
       setIsSubmitting(false)
       setIsSubmitted(true)
-
-      // Reset form
-      const form = e.target as HTMLFormElement
       form.reset()
+      toast.success("Your message has been sent successfully!")
 
-      // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false)
       }, 5000)
-    }, 1500)
+    } else {
+      setIsSubmitting(false)
+      toast.error("Something went wrong. Please try again later.")
+    }
   }
 
   return (
@@ -101,4 +111,3 @@ export default function ContactForm() {
     </form>
   )
 }
-

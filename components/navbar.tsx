@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Sun, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 export default function Navbar() {
@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="font-bold text-xl">DevLab Solutions</span>
+          <span className="font-bold text-xl">Dev Lab </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -38,10 +38,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" size="icon">
-            <Sun className="h-4 w-4" />
-            <span className="sr-only">Toggle theme</span>
-          </Button>
+
           <Button variant="gradient" size="sm" asChild>
             <Link href="/contact">Contact Us</Link>
           </Button>

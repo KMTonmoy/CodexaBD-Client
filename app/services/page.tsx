@@ -1,5 +1,4 @@
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+ import Footer from "@/components/footer"
 import { Code, Palette, Layers, Zap, ShoppingCart, BarChart, Globe, Server } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -29,7 +28,7 @@ const services = [
     ],
   },
   {
-    name: "Full-Stack Solutions",
+    name: "Full-Stack ",
     description:
       "End-to-end development from database to frontend implementation, ensuring seamless integration and optimal performance.",
     icon: Layers,
@@ -48,7 +47,7 @@ const services = [
     ],
   },
   {
-    name: "E-Commerce Solutions",
+    name: "E-Commerce ",
     description:
       "Custom online stores with secure payment processing, inventory management, and seamless user experience.",
     icon: ShoppingCart,
@@ -80,7 +79,7 @@ const services = [
   {
     name: "Hosting & Maintenance",
     description:
-      "Reliable hosting solutions and ongoing maintenance to ensure your website remains secure, up-to-date, and performing optimally.",
+      "Reliable hosting  and ongoing maintenance to ensure your website remains secure, up-to-date, and performing optimally.",
     icon: Server,
     features: ["Cloud hosting setup", "Regular backups", "Security updates", "Performance monitoring"],
   },
@@ -96,8 +95,7 @@ export default function ServicesPage() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
-
+ 
         <main className="container py-24">
           <div className="mx-auto max-w-[58rem] text-center mb-16">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-5xl md:text-6xl">Our Services</h1>
@@ -130,7 +128,7 @@ export default function ServicesPage() {
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold mb-4">Need a Custom Solution?</h2>
               <p className="text-muted-foreground">
-                We offer tailored solutions to meet your specific business requirements. Contact us to discuss your
+                We offer tailored  to meet your specific business requirements. Contact us to discuss your
                 project.
               </p>
             </div>

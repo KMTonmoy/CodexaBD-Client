@@ -18,8 +18,8 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:info@DevLab.com" className="text-muted-foreground hover:text-primary">
-                    info@DevLab.com
+                  <a href="mailto:info@Dev Lab.com" className="text-muted-foreground hover:text-primary">
+                   devlab.inbox@gmail.com
                   </a>
                 </div>
               </div>
@@ -29,7 +29,7 @@ export default function ContactSection() {
                 <div>
                   <p className="font-medium">Phone</p>
                   <a href="tel:+11234567890" className="text-muted-foreground hover:text-primary">
-                    +1 (123) 456-7890
+                    +88 (016) 2256-4462
                   </a>
                 </div>
               </div>
@@ -39,9 +39,9 @@ export default function ContactSection() {
                 <div>
                   <p className="font-medium">Address</p>
                   <p className="text-muted-foreground">
-                    123 Tech Avenue, Suite 400
+                    Dashuria, Ishwardi, Pabna
                     <br />
-                    San Francisco, CA 94107
+                    Dashuria Traffic Mor, Near Hanif Counter
                   </p>
                 </div>
               </div>

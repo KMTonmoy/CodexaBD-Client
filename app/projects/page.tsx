@@ -1,5 +1,4 @@
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+ import Footer from "@/components/footer"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
@@ -39,7 +38,7 @@ const projects = [
     image: "/placeholder.svg?height=400&width=600",
     tags: ["Vue.js", "D3.js", "Firebase", "GraphQL"],
     link: "#",
-    client: "DataMetrics Solutions",
+    client: "DataMetrics ",
   },
   {
     title: "Educational Platform",
@@ -71,8 +70,7 @@ export default function ProjectsPage() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
-
+ 
         <main className="container py-24">
           <div className="mx-auto max-w-[58rem] text-center mb-16">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-5xl md:text-6xl">Our Projects</h1>

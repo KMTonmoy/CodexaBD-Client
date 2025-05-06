@@ -12,7 +12,7 @@ const features = [
     icon: Palette,
   },
   {
-    name: "Full-Stack Solutions",
+    name: "Full-Stack ",
     description: "End-to-end development from database to frontend implementation.",
     icon: Layers,
   },

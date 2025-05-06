@@ -12,8 +12,7 @@ export default function ContactPage() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
-        <ContactSection />
+         <ContactSection />
         <Footer />
       </div>
     </div>

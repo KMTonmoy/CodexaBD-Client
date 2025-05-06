@@ -1,5 +1,4 @@
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+ import Footer from "@/components/footer"
 import Image from "next/image"
 import { Github, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
@@ -9,7 +8,7 @@ const teamMembers = [
     name: "Alex Johnson",
     role: "Founder & CEO",
     image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop",
-    bio: "Alex founded DevLab with a vision to create digital experiences that drive business growth. With over 15 years of experience in web development and digital strategy, he leads the team with passion and innovation.",
+    bio: "Alex founded Dev Lab with a vision to create digital experiences that drive business growth. With over 15 years of experience in web development and digital strategy, he leads the team with passion and innovation.",
     social: {
       linkedin: "#",
       twitter: "#",
@@ -20,7 +19,7 @@ const teamMembers = [
     name: "Sophia Chen",
     role: "Creative Director",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-    bio: "Sophia brings over a decade of experience in UI/UX design to DevLab. Her keen eye for aesthetics and user-centered approach ensures that every project not only looks beautiful but also delivers exceptional user experiences.",
+    bio: "Sophia brings over a decade of experience in UI/UX design to Dev Lab. Her keen eye for aesthetics and user-centered approach ensures that every project not only looks beautiful but also delivers exceptional user experiences.",
     social: {
       linkedin: "#",
       twitter: "#",
@@ -30,7 +29,7 @@ const teamMembers = [
     name: "Marcus Williams",
     role: "Lead Developer",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop",
-    bio: "Marcus is a full-stack developer with expertise in React, Node.js, and cloud architecture. He's passionate about writing clean, efficient code and implementing innovative technical solutions for complex challenges.",
+    bio: "Marcus is a full-stack developer with expertise in React, Node.js, and cloud architecture. He's passionate about writing clean, efficient code and implementing innovative technical  for complex challenges.",
     social: {
       linkedin: "#",
       github: "#",
@@ -50,7 +49,7 @@ const teamMembers = [
     name: "David Kim",
     role: "Backend Developer",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop",
-    bio: "David is an expert in database design, API development, and server architecture. His focus on performance optimization and security ensures that all DevLab projects are built on a solid foundation.",
+    bio: "David is an expert in database design, API development, and server architecture. His focus on performance optimization and security ensures that all Dev Lab projects are built on a solid foundation.",
     social: {
       linkedin: "#",
       github: "#",
@@ -78,13 +77,12 @@ export default function TeamPage() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
-
+ 
         <main className="container py-24">
           <div className="mx-auto max-w-[58rem] text-center mb-16">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-5xl md:text-6xl">Our Team</h1>
             <p className="mt-4 text-muted-foreground sm:text-lg">
-              Meet the talented individuals behind DevLab' success. Our diverse team brings together expertise in
+              Meet the talented individuals behind Dev Lab' success. Our diverse team brings together expertise in
               design, development, and digital strategy.
             </p>
           </div>

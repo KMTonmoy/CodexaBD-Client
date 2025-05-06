@@ -1,3 +1,5 @@
+"use client"
+
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -14,16 +16,15 @@ export default function AboutPage() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
-
+ 
         <main className="container py-24">
           <div className="mx-auto max-w-3xl">
-            <h1 className="text-4xl font-bold mb-8">About DevLab</h1>
+            <h1 className="text-4xl font-bold mb-8">About Dev Lab</h1>
 
             <div className="aspect-video relative mb-8 rounded-lg overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
-                alt="DevLab team"
+                alt="Dev Lab team"
                 width={800}
                 height={400}
                 className="object-cover"
@@ -32,16 +33,16 @@ export default function AboutPage() {
 
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p>
-                DevLab is a premier web development and design agency dedicated to creating exceptional digital
-                experiences. Founded in 2018, we've grown from a small team of passionate developers to a full-service
-                digital agency serving clients across various industries.
+                Dev Lab is a leading web development and design agency committed to delivering exceptional digital
+                experiences. Established in 2018, we have evolved from a small group of dedicated developers into a
+                full-service digital agency catering to clients from diverse industries.
               </p>
 
               <h2>Our Mission</h2>
               <p>
-                At DevLab, our mission is to empower businesses with innovative digital solutions that drive growth
-                and enhance user experience. We believe in combining cutting-edge technology with creative design to
-                deliver websites and applications that not only look great but also perform exceptionally well.
+                At Dev Lab, our mission is to empower businesses through innovative digital solutions that foster growth
+                and enhance user engagement. We combine state-of-the-art technology with creative design to create websites
+                and applications that are not only visually appealing but also optimized for high performance.
               </p>
 
               <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -61,57 +62,54 @@ export default function AboutPage() {
 
               <h2>Our Approach</h2>
               <p>
-                We take a collaborative approach to every project, working closely with our clients to understand their
-                unique needs and objectives. Our process is transparent, iterative, and focused on delivering measurable
-                results.
+                We adopt a collaborative approach for every project, working closely with clients to fully comprehend their
+                objectives. Our transparent, iterative process ensures we consistently deliver tangible and measurable results.
               </p>
 
               <ol>
                 <li>
-                  <strong>Discovery:</strong> We begin by understanding your business, goals, and target audience.
+                  <strong>Discovery:</strong> We initiate by understanding your business, objectives, and target audience.
                 </li>
                 <li>
-                  <strong>Strategy:</strong> We develop a comprehensive plan tailored to your specific needs.
+                  <strong>Strategy:</strong> We craft a comprehensive plan tailored to your specific requirements.
                 </li>
                 <li>
-                  <strong>Design:</strong> Our creative team crafts visually stunning and user-friendly interfaces.
+                  <strong>Design:</strong> Our creative team develops visually captivating and user-centric interfaces.
                 </li>
                 <li>
-                  <strong>Development:</strong> We build robust, scalable solutions using the latest technologies.
+                  <strong>Development:</strong> We construct robust, scalable solutions using modern technologies.
                 </li>
                 <li>
-                  <strong>Testing:</strong> Rigorous quality assurance ensures everything works flawlessly.
+                  <strong>Testing:</strong> Thorough quality assurance ensures flawless functionality.
                 </li>
                 <li>
-                  <strong>Launch:</strong> We deploy your project and provide training and support.
+                  <strong>Launch:</strong> We deploy your project and offer training and post-launch support.
                 </li>
                 <li>
-                  <strong>Optimization:</strong> Continuous improvement based on data and feedback.
+                  <strong>Optimization:</strong> Ongoing improvements based on feedback and performance data.
                 </li>
               </ol>
 
               <h2>Our Values</h2>
               <ul>
                 <li>
-                  <strong>Innovation:</strong> We stay at the forefront of technology to provide the most effective
-                  solutions.
+                  <strong>Innovation:</strong> We remain at the forefront of technology, providing cutting-edge solutions.
                 </li>
                 <li>
-                  <strong>Quality:</strong> We never compromise on the quality of our work, ensuring every pixel is
-                  perfect.
+                  <strong>Quality:</strong> We are committed to the highest standards of quality in all aspects of our work.
                 </li>
                 <li>
-                  <strong>Integrity:</strong> We build relationships based on trust, honesty, and transparency.
+                  <strong>Integrity:</strong> We foster trust, transparency, and honesty in all our business relationships.
                 </li>
                 <li>
-                  <strong>Collaboration:</strong> We believe the best results come from working together as a team.
+                  <strong>Collaboration:</strong> We believe in the power of teamwork to achieve the best results.
                 </li>
               </ul>
 
               <div className="my-12">
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
-                  alt="DevLab office"
+                  alt="Dev Lab office"
                   width={800}
                   height={400}
                   className="rounded-lg"
@@ -120,14 +118,14 @@ export default function AboutPage() {
 
               <h2>Our Expertise</h2>
               <p>
-                Our team brings together expertise in web development, UI/UX design, e-commerce solutions, and digital
-                marketing. We specialize in creating responsive websites, custom web applications, e-commerce platforms,
-                and comprehensive digital strategies.
+                Our team is proficient in web development, UI/UX design, e-commerce solutions, and digital marketing. We
+                specialize in building responsive websites, custom web applications, e-commerce platforms, and comprehensive
+                digital strategies.
               </p>
 
               <p>
-                Whether you're a startup looking to establish your online presence or an enterprise seeking digital
-                transformation, DevLab has the skills and experience to help you achieve your goals.
+                Whether you're a startup aiming to establish your online presence or a large corporation undergoing digital
+                transformation, Dev Lab possesses the expertise and experience to help you meet your objectives.
               </p>
             </div>
 
@@ -147,4 +145,3 @@ export default function AboutPage() {
     </div>
   )
 }
-

@@ -3,20 +3,20 @@ import Image from "next/image"
 
 const testimonials = [
   {
-    quote: "DevLab transformed our online presence. Their attention to detail and technical expertise is unmatched.",
+    quote: "Dev Lab transformed our online presence. Their attention to detail and technical expertise is unmatched.",
     author: "Jane Cooper",
     position: "CEO, Tech Innovators Inc.",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop",
   },
   {
-    quote: "Working with DevLab was a game-changer for our business. They delivered beyond our expectations.",
+    quote: "Working with Dev Lab was a game-changer for our business. They delivered beyond our expectations.",
     author: "Robert Johnson",
-    position: "Marketing Director, Global Solutions LLC",
+    position: "Marketing Director, Global  LLC",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop",
   },
   {
     quote:
-      "The team at DevLab understood our vision perfectly and brought it to life with stunning design and flawless functionality.",
+      "The team at Dev Lab understood our vision perfectly and brought it to life with stunning design and flawless functionality.",
     author: "Emily Williams",
     position: "Founder, Startup Ventures",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop",

@@ -7,7 +7,7 @@ const testimonials = [
   {
     quote: "The best project management tool we've ever used. Highly recommended!",
     author: "John Smith",
-    company: "Creative Solutions LLC",
+    company: "Creative  LLC",
   },
   {
     quote: "StreamLine helped us increase productivity by 40%. It's incredible!",
