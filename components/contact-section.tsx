@@ -18,8 +18,8 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:info@Dev Lab.com" className="text-muted-foreground hover:text-primary">
-                   devlab.inbox@gmail.com
+                  <a href="mailto:info@Codexa.com" className="text-muted-foreground hover:text-primary">
+                   Codexa.inbox@gmail.com
                   </a>
                 </div>
               </div>

@@ -9,9 +9,9 @@ import Navbar from "@/components/navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Dev Lab  - Web Development & Design Portfolio",
+  title: "Codexa  - Web Development & Design Portfolio",
   description:
-    "Dev Lab creates exceptional digital experiences that drive results. Explore our portfolio of web development, UI/UX design, and full-stack .",
+    "Codexa creates exceptional digital experiences that drive results. Explore our portfolio of web development, UI/UX design, and full-stack .",
 }
 
 export default function RootLayout({

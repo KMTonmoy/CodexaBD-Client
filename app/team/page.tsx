@@ -8,20 +8,20 @@ const teamMembers = [
     name: "Tonmoy Ahamed",
     role: "Founder & CEO",
     image: "https://res.cloudinary.com/dgwknm4yi/image/upload/v1746538587/qp3ybceclgfzueee3dol.jpg",
-    bio: "Tonmoy A. founded Dev Lab with a vision to create digital experiences that drive business growth. With over 4 years of experience in web development and digital strategy, he leads the team with passion and innovation.",
+    bio: "Tonmoy A. founded Codexa with a vision to create digital experiences that drive business growth. With over 4 years of experience in web development and digital strategy, he leads the team with passion and innovation.",
     social: {
       linkedin: "https://www.linkedin.com/in/tonmoy-ahamed",
       github: "https://github.com/KMTonmoy",
     },
   },
   {
-    name: "Sophia Chen",
-    role: "Creative Director",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-    bio: "Sophia brings over a decade of experience in UI/UX design to Dev Lab. Her keen eye for aesthetics and user-centered approach ensures that every project not only looks beautiful but also delivers exceptional user experiences.",
+    name: "Shah Alim Shompod",
+    role: "Co-Founder & COO",
+    image: "https://res.cloudinary.com/dgwknm4yi/image/upload/v1747064741/1_qhp3pi.webp",
+    bio: "Shah Alim Shompod over a decade of experience in Web development to Codexa. Her keen eye for aesthetics and user-centered approach ensures that every project not only looks beautiful but also delivers exceptional user experiences.",
     social: {
-      linkedin: "#",
-      twitter: "#",
+      linkedin: "https://www.linkedin.com/in/shahalimshompod/",
+      github: "https://github.com/shahalimshompod",
     },
   },
   {
@@ -48,7 +48,7 @@ const teamMembers = [
     name: "David Kim",
     role: "Backend Developer",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop",
-    bio: "David is an expert in database design, API development, and server architecture. His focus on performance optimization and security ensures that all Dev Lab projects are built on a solid foundation.",
+    bio: "David is an expert in database design, API development, and server architecture. His focus on performance optimization and security ensures that all Codexa projects are built on a solid foundation.",
     social: {
       linkedin: "#",
       github: "#",
@@ -81,7 +81,7 @@ export default function TeamPage() {
           <div className="mx-auto max-w-[58rem] text-center mb-16">
             <h1 className="font-bold text-4xl leading-[1.1] sm:text-5xl md:text-6xl">Our Team</h1>
             <p className="mt-4 text-muted-foreground sm:text-lg">
-              Meet the talented individuals behind Dev Lab' success. Our diverse team brings together expertise in
+              Meet the talented individuals behind Codexa' success. Our diverse team brings together expertise in
               design, development, and digital strategy.
             </p>
           </div>
