@@ -19,12 +19,12 @@ export default function AboutPage() {
  
         <main className="container py-24">
           <div className="mx-auto max-w-3xl">
-            <h1 className="text-4xl font-bold mb-8">About Dev Lab</h1>
+            <h1 className="text-4xl font-bold mb-8">About Codexa</h1>
 
             <div className="aspect-video relative mb-8 rounded-lg overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
-                alt="Dev Lab team"
+                alt="Codexa team"
                 width={800}
                 height={400}
                 className="object-cover"
@@ -33,14 +33,14 @@ export default function AboutPage() {
 
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p>
-                Dev Lab is a leading web development and design agency committed to delivering exceptional digital
+                Codexa is a leading web development and design agency committed to delivering exceptional digital
                 experiences. Established in 2018, we have evolved from a small group of dedicated developers into a
                 full-service digital agency catering to clients from diverse industries.
               </p>
 
               <h2>Our Mission</h2>
               <p>
-                At Dev Lab, our mission is to empower businesses through innovative digital solutions that foster growth
+                At Codexa, our mission is to empower businesses through innovative digital solutions that foster growth
                 and enhance user engagement. We combine state-of-the-art technology with creative design to create websites
                 and applications that are not only visually appealing but also optimized for high performance.
               </p>
@@ -109,7 +109,7 @@ export default function AboutPage() {
               <div className="my-12">
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
-                  alt="Dev Lab office"
+                  alt="Codexa office"
                   width={800}
                   height={400}
                   className="rounded-lg"
@@ -125,7 +125,7 @@ export default function AboutPage() {
 
               <p>
                 Whether you're a startup aiming to establish your online presence or a large corporation undergoing digital
-                transformation, Dev Lab possesses the expertise and experience to help you meet your objectives.
+                transformation, Codexa possesses the expertise and experience to help you meet your objectives.
               </p>
             </div>
 
