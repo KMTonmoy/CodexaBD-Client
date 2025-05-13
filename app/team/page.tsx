@@ -1,7 +1,9 @@
- import Footer from "@/components/footer"
+'use client'
+import Footer from "@/components/footer"
 import Image from "next/image"
 import { Github, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 const teamMembers = [
   {
@@ -28,7 +30,7 @@ const teamMembers = [
     name: "Marcus Williams",
     role: "Lead Developer",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop",
-    bio: "Marcus is a full-stack developer with expertise in React, Node.js, and cloud architecture. He's passionate about writing clean, efficient code and implementing innovative technical  for complex challenges.",
+    bio: "Marcus is a full-stack developer with expertise in React, Node.js, and cloud architecture. He's passionate about writing clean, efficient code and implementing innovative technical solutions for complex challenges.",
     social: {
       linkedin: "#",
       github: "#",
@@ -69,28 +71,35 @@ const teamMembers = [
 export default function TeamPage() {
   return (
     <div className="relative min-h-screen">
-      <div className="pointer-events-none fixed inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-        <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-500/10 blur-[100px]" />
-        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
-      </div>
-
       <div className="relative z-10">
- 
         <main className="container py-24">
-          <div className="mx-auto max-w-[58rem] text-center mb-16">
-            <h1 className="font-bold text-4xl leading-[1.1] sm:text-5xl md:text-6xl">Our Team</h1>
-            <p className="mt-4 text-muted-foreground sm:text-lg">
-              Meet the talented individuals behind Codexa' success. Our diverse team brings together expertise in
-              design, development, and digital strategy.
-            </p>
-          </div>
+          <motion.div
+            className="mx-auto max-w-[58rem] text-center mb-16"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="font-bold text-4xl leading-[1.1] sm:text-5xl md:text-6xl">
+              Our Team
+            </h1>
+            <motion.p
+              className="mt-4 text-muted-foreground sm:text-lg"
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              Meet the talented individuals behind Codexa' success. Our diverse team brings together expertise in design, development, and digital strategy.
+            </motion.p>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="bg-background border rounded-lg overflow-hidden hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:border-primary/30 group"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
               >
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
@@ -135,15 +144,19 @@ export default function TeamPage() {
                     )}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
-          <div className="mt-16 bg-primary/5 p-8 rounded-lg text-center">
+          <motion.div
+            className="mt-16 bg-primary/5 p-8 rounded-lg text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+          >
             <h2 className="text-2xl font-bold mb-4">Join Our Team</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              We're always looking for talented individuals to join our team. If you're passionate about web
-              development, design, or digital strategy, we'd love to hear from you.
+              We're always looking for talented individuals to join our team. If you're passionate about web development, design, or digital strategy, we'd love to hear from you.
             </p>
             <a
               href="/contact"
@@ -151,7 +164,7 @@ export default function TeamPage() {
             >
               View Open Positions
             </a>
-          </div>
+          </motion.div>
         </main>
 
         <Footer />
@@ -159,4 +172,3 @@ export default function TeamPage() {
     </div>
   )
 }
-
