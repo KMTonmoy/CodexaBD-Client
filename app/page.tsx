@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       <div className="relative z-10">
-         <Hero />
+        <Hero />
         <Features />
         <Portfolio />
         <Testimonials />

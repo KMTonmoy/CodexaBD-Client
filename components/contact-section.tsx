@@ -1,16 +1,33 @@
+'use client'
+
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import ContactForm from "./contact-form"
+import { motion } from "framer-motion"
 
 export default function ContactSection() {
   return (
     <section className="container py-24 md:py-32">
-      <div className="mx-auto max-w-[58rem] text-center mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="mx-auto max-w-[58rem] text-center mb-16"
+      >
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Get in Touch</h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">Have a project in mind? We'd love to hear from you.</p>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="space-y-8">
+        {/* Left Column */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="space-y-8"
+        >
+          {/* Contact Info Box */}
           <div className="bg-primary/5 p-8 rounded-lg">
             <h3 className="text-xl font-bold mb-6">Contact Information</h3>
             <div className="space-y-6">
@@ -18,8 +35,11 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:info@Codexa.com" className="text-muted-foreground hover:text-primary">
-                   Codexa.inbox@gmail.com
+                  <a href="mailto:codexabd.inbox@gmail.com" className="text-muted-foreground hover:text-primary">
+                    codexabd.inbox@gmail.com
+                  </a> <br />
+                  <a href="mailto:codexabd.contact@gmail.com" className="text-muted-foreground hover:text-primary">
+                    codexabd.contact@gmail.com
                   </a>
                 </div>
               </div>
@@ -28,8 +48,8 @@ export default function ContactSection() {
                 <Phone className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a href="tel:+11234567890" className="text-muted-foreground hover:text-primary">
-                    +88 (016) 2256-4462
+                  <a href="tel:+8801622564462" className="text-muted-foreground hover:text-primary">
+                    +880 1622-564462
                   </a>
                 </div>
               </div>
@@ -60,9 +80,16 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="rounded-lg overflow-hidden h-[300px] border">
+          {/* Map */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="rounded-lg overflow-hidden h-[300px] border"
+          >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0968143526147!2d-122.4004334!3d37.7857739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807c1f0da6a5%3A0xb63b7f112295d508!2sSan%20Francisco%2C%20CA%2094107!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1287.6554612094983!2d89.10376773418687!3d24.100101635818305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9f23937b8679%3A0xd0f9602db7014ee4!2sDev%20Lab!5e0!3m2!1sen!2sbd!4v1747105604420!5m2!1sen!2sbd"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -70,15 +97,21 @@ export default function ContactSection() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="bg-background border rounded-lg p-8">
+        {/* Right Column - Form */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-background border rounded-lg p-8"
+        >
           <h3 className="text-xl font-bold mb-6">Send Us a Message</h3>
           <ContactForm />
-        </div>
+        </motion.div>
       </div>
     </section>
   )
 }
-

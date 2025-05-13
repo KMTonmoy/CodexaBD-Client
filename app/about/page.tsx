@@ -1,10 +1,10 @@
 "use client"
 
-import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 export default function AboutPage() {
   return (
@@ -16,12 +16,24 @@ export default function AboutPage() {
       </div>
 
       <div className="relative z-10">
- 
         <main className="container py-24">
           <div className="mx-auto max-w-3xl">
-            <h1 className="text-4xl font-bold mb-8">About Codexa</h1>
+            {/* Animating the header */}
+            <motion.h1
+              className="text-4xl font-bold mb-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              About Codexa
+            </motion.h1>
 
-            <div className="aspect-video relative mb-8 rounded-lg overflow-hidden">
+            <motion.div
+              className="aspect-video relative mb-8 rounded-lg overflow-hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                 alt="Codexa team"
@@ -29,16 +41,27 @@ export default function AboutPage() {
                 height={400}
                 className="object-cover"
               />
-            </div>
+            </motion.div>
 
-            <div className="prose prose-lg dark:prose-invert max-w-none">
+            <motion.div
+              className="prose prose-lg dark:prose-invert max-w-none"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+            >
               <p>
                 Codexa is a leading web development and design agency committed to delivering exceptional digital
                 experiences. Established in 2018, we have evolved from a small group of dedicated developers into a
                 full-service digital agency catering to clients from diverse industries.
               </p>
 
-              <h2>Our Mission</h2>
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1.5 }}
+              >
+                Our Mission
+              </motion.h2>
               <p>
                 At Codexa, our mission is to empower businesses through innovative digital solutions that foster growth
                 and enhance user engagement. We combine state-of-the-art technology with creative design to create websites
@@ -46,27 +69,52 @@ export default function AboutPage() {
               </p>
 
               <div className="my-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-primary/5 p-6 rounded-lg">
+                <motion.div
+                  className="bg-primary/5 p-6 rounded-lg"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 2 }}
+                >
                   <h3 className="text-xl font-bold mb-2">50+</h3>
                   <p className="text-muted-foreground">Successful Projects</p>
-                </div>
-                <div className="bg-primary/5 p-6 rounded-lg">
+                </motion.div>
+                <motion.div
+                  className="bg-primary/5 p-6 rounded-lg"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 2.2 }}
+                >
                   <h3 className="text-xl font-bold mb-2">15+</h3>
                   <p className="text-muted-foreground">Team Members</p>
-                </div>
-                <div className="bg-primary/5 p-6 rounded-lg">
+                </motion.div>
+                <motion.div
+                  className="bg-primary/5 p-6 rounded-lg"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: 2.4 }}
+                >
                   <h3 className="text-xl font-bold mb-2">98%</h3>
                   <p className="text-muted-foreground">Client Satisfaction</p>
-                </div>
+                </motion.div>
               </div>
 
-              <h2>Our Approach</h2>
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 2.5 }}
+              >
+                Our Approach
+              </motion.h2>
               <p>
                 We adopt a collaborative approach for every project, working closely with clients to fully comprehend their
                 objectives. Our transparent, iterative process ensures we consistently deliver tangible and measurable results.
               </p>
 
-              <ol>
+              <motion.ol
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 2.8 }}
+              >
                 <li>
                   <strong>Discovery:</strong> We initiate by understanding your business, objectives, and target audience.
                 </li>
@@ -85,12 +133,16 @@ export default function AboutPage() {
                 <li>
                   <strong>Launch:</strong> We deploy your project and offer training and post-launch support.
                 </li>
-                <li>
-                  <strong>Optimization:</strong> Ongoing improvements based on feedback and performance data.
-                </li>
-              </ol>
+                <strong>Optimization:</strong> Ongoing improvements based on feedback and performance data.
+              </motion.ol>
 
-              <h2>Our Values</h2>
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 3 }}
+              >
+                Our Values
+              </motion.h2>
               <ul>
                 <li>
                   <strong>Innovation:</strong> We remain at the forefront of technology, providing cutting-edge solutions.
@@ -106,7 +158,12 @@ export default function AboutPage() {
                 </li>
               </ul>
 
-              <div className="my-12">
+              <motion.div
+                className="my-12"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 3.2 }}
+              >
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
                   alt="Codexa office"
@@ -114,9 +171,15 @@ export default function AboutPage() {
                   height={400}
                   className="rounded-lg"
                 />
-              </div>
+              </motion.div>
 
-              <h2>Our Expertise</h2>
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 3.4 }}
+              >
+                Our Expertise
+              </motion.h2>
               <p>
                 Our team is proficient in web development, UI/UX design, e-commerce solutions, and digital marketing. We
                 specialize in building responsive websites, custom web applications, e-commerce platforms, and comprehensive
@@ -127,7 +190,7 @@ export default function AboutPage() {
                 Whether you're a startup aiming to establish your online presence or a large corporation undergoing digital
                 transformation, Codexa possesses the expertise and experience to help you meet your objectives.
               </p>
-            </div>
+            </motion.div>
 
             <div className="mt-12 flex justify-center space-x-4">
               <Button variant="gradient" size="lg" asChild>
