@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CodexaBD
 
-## Getting Started
+**CodexaBD** is a web development agency focused on creating innovative and scalable web solutions. Our mission is to provide high-quality, user-friendly websites and applications that drive growth and success for our clients.
 
-First, run the development server:
+![CodexaBD Screenshot](./public/Screenshot.png)  
 
+## Technologies Used
+
+- **Frontend**: React.js, Next.js, Tailwind CSS, TypeScript
+- **Backend**: Node.js, Express.js, Prisma, PostgreSQL
+- **Others**: JWT (for authentication), Axios (for API requests), SSLCommerz/ShurjoPay (payment integration)
+
+## Features
+
+- Custom website and web app development
+- E-commerce solutions
+- Event planning systems
+- Content management systems
+- Payment gateway integrations
+
+## Services
+
+- **Website Development**: We specialize in responsive websites tailored to your business needs.
+- **Web Application Development**: Scalable and secure web apps using the latest technologies.
+- **Mobile-Responsive Design**: Ensuring your website looks great on all devices.
+- **SEO and Performance Optimization**: Helping you rank higher and deliver better performance.
+- **Payment Integration**: Secure payment solutions with SSLCommerz/ShurjoPay.
+
+## Contact Us
+
+For inquiries or project collaborations, feel free to reach out!
+
+Email: contact@codexabd.com  
+Phone: +8801XXXXXXXXX  
+Website: [codexabd.com](https://codexabd.com)
+
+## Installation
+
+If you are looking to set up the project locally, you can follow these steps:
+
+### 1. Clone the repository:
 ```bash
+git clone https://github.com/your-repo/codexabd.git
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
