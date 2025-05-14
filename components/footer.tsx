@@ -28,11 +28,17 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
-              <li>
+                    <li>
                 <Link href="/about" className="text-muted-foreground transition-colors hover:text-primary">
                   About
                 </Link>
               </li>
+              <li>
+                <Link href="/login" className="text-muted-foreground transition-colors hover:text-primary">
+                  Login
+                </Link>
+              </li>
+        
             </ul>
           </div>
           <div className="space-y-4">
